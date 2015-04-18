@@ -12,14 +12,14 @@ body {
 	background: #fff;
 	color: #362f2d;
 }
+.wrapper {}
+
 .header {
 	background-color: #f26d7d;
 	height: 50px;
 }
 
-.columns {
-	
-}
+.columns {}
 
 .content {
 	/*dev*/ background: rgba(0,255,0,0.1);
@@ -36,6 +36,18 @@ body {
 	height: 85px;
 }
 
-@media screen and (min-width: 769px) {
+
+
+@media screen and (min-width: 978px) {
+	
+	.wrapper {
+		width: 978px;
+		margin: 0 auto;
+	}
+
+	.header {
+		background: none;
+		height: 195px;
+	}
 	
 }
