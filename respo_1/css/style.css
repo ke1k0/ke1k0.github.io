@@ -8,3 +8,34 @@ ______________BASE______________
 	background-repeat: repeat;
 } */
 
+body {
+	background: #fff;
+	color: #362f2d;
+}
+.header {
+	background-color: #f26d7d;
+	height: 50px;
+}
+
+.columns {
+	
+}
+
+.content {
+	/*dev*/ background: rgba(0,255,0,0.1);
+	/*dev*/ min-height: 200px;
+}
+
+.sidebar {
+	/*dev*/ background: rgba(0,0,255,0.1);
+	/*dev*/ min-height: 200px;
+}
+
+.footer {
+	background: #f8b6be;
+	height: 85px;
+}
+
+@media screen and (min-width: 769px) {
+	
+}
