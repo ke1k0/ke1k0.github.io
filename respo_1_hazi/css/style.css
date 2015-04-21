@@ -134,7 +134,7 @@ ______________HEADER______________
 	box-sizing: border-box;
 	left:0;
 	list-style: none;
-	margin-left: 90vw;
+	margin-left: -270px;
 	margin-left: calc(-100vw + 45px);
 	right: 0;
 	padding: 75px 0 25px;
