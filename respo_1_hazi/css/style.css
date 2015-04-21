@@ -73,6 +73,7 @@ ______________HEADER______________
 	background: url(../img/logo_white.png);
 	background-repeat: no-repeat;
 	background-size: 230px auto;
+	background-position: 0 50%;
 	background-position: 0 calc(50% + 1px);
 	display: block;
 	height: 50px;
@@ -93,6 +94,7 @@ ______________HEADER______________
 	height: 43px;
 	line-height: 43px;
 	padding: 0 10px;
+	width: 87%;
 	width: calc(100% - 40px);
 	box-sizing: border-box;
 	text-align: center;
@@ -127,11 +129,12 @@ ______________HEADER______________
 	color: #febcc4;
 }
 .menu ul {
-	dev display: none;
+	display: none;
 	background: #f26d7d;
 	box-sizing: border-box;
 	left:0;
 	list-style: none;
+	margin-left: 90vw;
 	margin-left: calc(-100vw + 45px);
 	right: 0;
 	padding: 75px 0 25px;
@@ -143,7 +146,7 @@ ______________HEADER______________
 }
 .menu li {
 	border-top: 1px solid rgba(255,255,255,0.25);
-	padding: 0 20px;
+	padding: 0;
 }
 .menu li:last-child {
 	border-bottom: 1px solid rgba(255,255,255,0.25); 
@@ -324,6 +327,7 @@ blockquote::after {
 }
 input[id="email-inp"] {
 	float: left;
+	width: 220px;
 	width: calc(100% - 58px);
 	border: 1px solid #f8b6be;
 	-webkit-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -527,7 +531,6 @@ ______________FOOTER______________
 		border-top: none;
 		float: left;
 		margin-right: 10px;
-		padding: 0;
 	}
 	.menu li:last-child {
 		border-bottom: none; 
