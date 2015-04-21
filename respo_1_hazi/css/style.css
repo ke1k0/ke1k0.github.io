@@ -143,6 +143,7 @@ ______________HEADER______________
 }
 .menu li {
 	border-top: 1px solid rgba(255,255,255,0.25);
+	padding: 0 20px;
 }
 .menu li:last-child {
 	border-bottom: 1px solid rgba(255,255,255,0.25); 
@@ -523,6 +524,7 @@ ______________FOOTER______________
 		border-top: none;
 		float: left;
 		margin-right: 10px;
+		padding: 0;
 	}
 	.menu li:last-child {
 		border-bottom: none; 
