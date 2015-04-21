@@ -127,7 +127,7 @@ ______________HEADER______________
 	color: #febcc4;
 }
 .menu ul {
-	/*dev display: none; */
+	dev display: none;
 	background: #f26d7d;
 	box-sizing: border-box;
 	left:0;
