@@ -11,12 +11,20 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-		
+		var width = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
+
 		$(document).ready(function(){
 		    $("#menu-toggle").hide();
-		    $("#menu-icon").click(function(){
-		        $("#menu-toggle").toggle(300);
-		    });
+		    if (width < 977) {
+		    	$("#menu-icon").click(function(){
+			        $("#menu-toggle").toggle(300);
+			    });
+			}
+			else {
+				$("#menu-toggle").show();
+			}
 		});
     </script>
 
