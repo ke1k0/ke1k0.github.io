@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+		    $("#menu-icon").click(function(){
+		        $("#menu-toggle").toggle(1000);
+		    });
+		});
+    </script>
+
 </head>
 
 <body>
@@ -28,8 +38,8 @@
 			
 			<!-- menü -->
 			<nav class="menu">
-				<i class="menu-icon fa fa-bars"></i>
-				<ul class="clearfix">
+				<i id="menu-icon" class="menu-icon fa fa-bars"></i>
+				<ul id="menu-toggle" class="clearfix">
 					<li><a class="menu-item" href="#">Kacsatoll</a></li>
 					<li><a class="menu-item" href="#">Libatoll</a></li>
 					<li><a class="menu-item" href="#">Egzotikus tollak</a></li>
@@ -40,7 +50,7 @@
 
 			<!-- facebook -->
 			<p class="facebook">
-				<a href="#">facebook</a>
+				<a class="facebook-icon" href="#"><i class="fa fa-facebook"></i> facebook</a>
 			</p>
 
 		</header>
@@ -49,23 +59,128 @@
 			
 			<!-- main content -->
 			<main class="content">
-				
+
+				<!-- introduction -->
+				<header class="intro clearfix">
+					<p class="intro-left">
+						A Tollfelvásároló Kft. 1992 óta lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed neque metus. Aliquam convallis tempus tellus. Aliquam vitae enim rhoncus, lobortis nisi eu, maximus libero. Mauris tincidunt erat sed tempor finibus. Arról nem is beszélve, hogy vel suscipit finibus. Praesent rutrum ante in vivamus eu magna arcu donec vitae viverra eros finibus.
+					</p>
+					<p class="intro-right">
+						Donec nec efficitur magna, in ornare tortor. Praesent így meg úgy rutrum ante in nulla lobortis finibus. Donec vitae viverra eros. Quisque viverra tempus mauris, et egestas est. In nec lobortis tellus. Nunc at pretium nulla. Cras commodo, lacus in tempus mattis, nulla odio rhoncus.
+					</p>
+					<p class="centr">
+						<a href="#" class="to-full-intro">Teljes történetünk</a>
+					</p>
+				</header>
+
+				<!-- gallery -->
+				<section class="gallery">
+					<ul class="clearfix">
+						<li><img src="img/pic1.jpg" width="170" height="120" alt="toll1"></li>
+						<li><img src="img/pic2.jpg" width="170" height="120" alt="toll2"></li>
+						<li><img src="img/pic3.jpg" width="170" height="120" alt="toll3"></li>
+						<li><img src="img/pic4.jpg" width="170" height="120" alt="toll4"></li>
+						<li><img src="img/pic5.jpg" width="170" height="120" alt="toll5"></li>
+						<li><img src="img/pic6.jpg" width="170" height="120" alt="toll6"></li>
+						<li><img src="img/pic7.jpg" width="170" height="120" alt="toll7"></li>
+						<li><img src="img/pic8.jpg" width="170" height="120" alt="toll8"></li>
+					</ul>
+				</section>
+
+				<!-- iparági hírek -->
+				<footer class="news">
+					<header class="clearfix">
+						<h1>Iparági hírek</h1>
+						<a href="#" class="more-news">További hírek</a>
+					</header>
+					
+					<ul class="news-list clearfix">
+						<li>
+							<article>
+								<h2>Pellentesque ut malesuada ligula</h2>
+								<p>Etiam et urna at dui ferment um gravida. Sed aliquam nola gravida ornare. Nam aliquam sed turpis at blandit. </p>
+								<a href="#" class="more">&#187; Bővebben</a>
+							</article>
+						</li>
+						<li>
+							<article>
+								<h2>Etiam et urna at dui fermentum gravida</h2>
+								<p>Sed aliquam nola gravida ornare. Nam aliquam sed turpis at blandit. Etiam et urna at dui fermentum noi.</p>
+								<a href="#" class="more">&#187; Bővebben</a>
+							</article>
+						</li>
+						<li>
+							<article>
+								<h2>Nam aliquam sed turp</h2>
+								<p>Pellentesque ut malesuada etiam et urna at dui ferment um gravida. Sed aliquam nola gravida ornare. Nam aliquam sed turpis at blandit. </p>
+								<a href="#" class="more">&#187; Bővebben</a>
+							</article>
+						</li>
+					</ul>
+				</footer>
+
 			</main>
 			
 			<!-- sidebar -->
 			<aside class="sidebar">
-				sidebar
+				
+				<!-- napi lelkesítő idézet -->
+				<section class="daily-quote">
+					<h1>Napi lelkesítő idézet</h1>
+					<blockquote>The only absolute knowledge attainable by man is that life is meaningless.</blockquote>
+					<p class="quote-author">Tolstoy</p>
+				</section>
+
+				<!-- hírelvél -->
+				<section class="newsletter">
+					<h1>Iratkozzon fel hírlevelünkre!</h1>
+
+					<!-- hírelvél feliratkozó form-->
+					<form  method="get" enctype="multiplart/form" action="" class="clearfix">
+						<label for="email-inp">Kérjük adja meg email címét:</label>
+						<input type="email" name="email" id="email-inp" placeholder="pl. hello@gezavagyok.hu" required />
+						<input class="subscribe-button" type="submit" name="subscribe" value="Feliratkozás" />
+					</form>
+
+				</section>
+
+				<!-- kedvencek -->
+				<section class="favourites">
+					<h1>Munkatársaink kedvencei</h1>
+					<ol>
+						<li>Beyoncé</li>
+						<li>Daft Punk</li>
+						<li>Kanye West</li>
+						<li>Britney Spears</li>
+						<li>New Kids on The Block</li>
+					</ol>
+				</section>
+
 			</aside>
 			
 		</div>
 
 		<!-- site footer -->
-		<footer class="footer">
-			footer
+		<footer class="footer clearfix">
+			<ul class="sitemap clearfix">
+				<li><a href="#" class="footer-link f-title">Tollfelvásároló Kft.</a></li>
+				<li><a href="#" class="footer-link">Kacsatoll</a></li>
+				<li><a href="#" class="footer-link">Libatoll</a></li>
+				<li><a href="#" class="footer-link">Egzotikus tollak</a></li>
+				<li><a href="#" class="footer-link">Cégünkről</a></li>
+				<li><a href="#" class="footer-link">Hírek</a></li>
+				<li><a href="#" class="footer-link">Kapcsolat</a></li>
+			</ul>
+			<p class="phone">
+				Tollfelvásárlás hotline <a href="tel:003618878787">06 1 887 8787</a>
+			</p>
 		</footer>
 
 	</div> <!-- wrapper vége -->
 
+
+
+	
 </body>
 
 </html>
