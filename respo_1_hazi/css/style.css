@@ -507,7 +507,7 @@ ______________FOOTER______________
 	}
 	.menu ul {
 		background: none;
-		display: inherit;
+		display: block;
 		margin-left: 0;
 		margin-bottom: 25px;
 		left: auto;
@@ -518,6 +518,9 @@ ______________FOOTER______________
 		-webkit-box-shadow: none;
 		-moz-box-shadow:    none;
 		box-shadow:         none;
+	}
+	#menu-toggle {
+		display: block;
 	}
 	.menu li {
 		background: #f26d7d;
@@ -742,34 +745,6 @@ ______________MAIN - NEWS______________
 		content: " ";
 		margin: 5px -10px 5px -30px;
 	}
-
-
-	/*
-	
-	
-	
-	.favourites ol {
-		margin: 20px;
-		padding-bottom: 20px;
-	}
-	.favourites li:after {
-		content: " ";
-		display: block;
-		border-bottom: 1px solid #f8b6be;
-		margin: 4px 0 4px -20px;
-	}
-	.favourites li:last-child:after {
-		content: " ";
-		display: none;
-	}
-	.sidebar h1 {
-		background: #f8b6be;
-		font-size: 1.8rem;
-		line-height: 4rem;
-		padding: 0 20px;
-		text-align: left;
-	}
-	*/
 
 	/*
 	______________FOOTER______________
