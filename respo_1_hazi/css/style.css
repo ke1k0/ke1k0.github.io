@@ -84,6 +84,7 @@ ______________HEADER______________
 	text-indent: 110%;
 	white-space: nowrap;
 	width: 230px;
+	z-index: 15;
 }
 .phone {
 	background: #fff;
@@ -98,7 +99,7 @@ ______________HEADER______________
 	width: calc(100% - 40px);
 	box-sizing: border-box;
 	text-align: center;
-	z-index: 5;
+	z-index: 15;
 }
 .phone a {
 	color: #007236;
@@ -109,13 +110,10 @@ ______________HEADER______________
 	top: 1px;
 }
 .menu {
-	background-color: #f26d7d;
-	height: 50px;
 	font-size: 2.1rem;
 	position: absolute;
-	right: 0;
 	top: 0;
-	width: 45px;	
+	width: 100%;
 }
 .menu-icon {
 	color: #fff;
@@ -125,24 +123,65 @@ ______________HEADER______________
 	text-align: center;
 	width: 45px;
 }
+.close {
+	display: none;
+	background: rgba(242, 109, 125, 0.5);
+	position: absolute;
+	position: fixed;
+	height: 1000px;
+	height: 100vh;
+	line-height: 0;
+	width: 100%;
+	text-align: right;
+	top: 0px;
+	z-index: 5;
+}
+.open {
+	float: right;
+}
+.fa-bars {
+	position: relative;
+	top: -2px;
+}
+.fa-times {
+	font-size: 2.3rem;
+	position: relative;
+	top: 11px;
+	right: 14px;
+}
 .menu-icon:active {
 	color: #febcc4;
 }
-.menu ul {
+#nav:target .close {
+	display: block;
+}
+#nav:target .open {
 	display: none;
+	z-index: 0;
+}
+
+.menu ul {
+	/**/ display: none; 
 	background: #f26d7d;
 	box-sizing: border-box;
 	left:0;
 	list-style: none;
-	margin-left: -270px;
-	margin-left: calc(-100vw + 45px);
 	right: 0;
 	padding: 75px 0 25px;
 	position: absolute;
-	width: 100vw;
+	top: 50px;
+	width: 100%;
+	z-index: 10;
 	-webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow:    0px 15px 20px 0px rgba(0, 0, 0, 0.15);
 	box-shadow:         0px 15px 20px 0px rgba(0, 0, 0, 0.15);
+}
+#nav:target .menu ul {
+	display: block;
+}
+#nav:target .fa-times {
+	position: relative;
+	z-index: 20;
 }
 .menu li {
 	border-top: 1px solid rgba(255,255,255,0.25);
@@ -536,6 +575,9 @@ ______________FOOTER______________
 		border-bottom: none; 
 	}
 	.menu-icon {
+		display: none;
+	}
+	#nav:target .close {
 		display: none;
 	}
 	.menu-item {

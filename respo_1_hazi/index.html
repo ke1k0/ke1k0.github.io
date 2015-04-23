@@ -10,28 +10,9 @@
 	<meta charset="utf-8">
 	
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-		var width = window.innerWidth
-		|| document.documentElement.clientWidth
-		|| document.body.clientWidth;
-
-		$(document).ready(function(){
-		    $("#menu-toggle").hide();
-		    if (width < 977) {
-		    	$("#menu-icon").click(function(){
-			        $("#menu-toggle").toggle(300);
-			    });
-			}
-			else {
-				$("#menu-toggle").show();
-			}
-		});
-    </script>
-
 </head>
 
-<body>
+<body id="nav">
 	
 	<div class="wrapper">
 
@@ -48,9 +29,11 @@
 			</p>
 			
 			<!-- menü -->
+			<a class="menu-icon close" href="#"><i class="fa fa-times"></a></i>
 			<nav class="menu">
-				<i id="menu-icon" class="menu-icon fa fa-bars"></i>
-				<ul id="menu-toggle" class="clearfix">
+				<a class="menu-icon open" href="#nav"><i class="fa fa-bars"></a></i>
+				
+				<ul class="clearfix">
 					<li><a class="menu-item" href="#">Kacsatoll</a></li>
 					<li><a class="menu-item" href="#">Libatoll</a></li>
 					<li><a class="menu-item" href="#">Egzotikus tollak</a></li>
